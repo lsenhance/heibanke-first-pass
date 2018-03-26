@@ -13,7 +13,10 @@ class AuthorSpider(scrapy.Spider):
         num=re.sub("\D","",num)
         print(type(num))
         print(num)
-        next_page='http://www.heibanke.com/lesson/crawler_ex00/'+ num
-        if next_page is not None:
-            yield scrapy.Request(next_page, callback=self.parse)
+        if num is not None:
+            next_page='http://www.heibanke.com/lesson/crawler_ex00/'+ num
+            if next_page is not None:
+                yield scrapy.Request(next_page, callback=self.parse)
+        else:
+            print('good work')
     
