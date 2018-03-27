@@ -30,7 +30,6 @@ class AuthorSpider(scrapy.Spider):
             if num!=None:
                 num=num[0]
         
-
         if num is not None:
             next_page='http://www.heibanke.com/lesson/crawler_ex00/'+ num
             yield scrapy.Request(next_page, callback=self.parse)
