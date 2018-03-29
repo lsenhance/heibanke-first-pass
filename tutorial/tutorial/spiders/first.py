@@ -3,10 +3,10 @@
 import scrapy
 import re
 
-class AuthorSpider(scrapy.Spider):
+class first_pass(scrapy.Spider):
     name = 'first'
     start_urls=(
-        'http://www.heibanke.com/lesson/crawler_ex00/',)
+        'http://www.heibanke.com/lesson/crawler_ex00/')
 
     def parse(self,response):
         num=response.xpath('/html/body/div/div/div[2]/h3/text()').extract()[0]
