@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN" >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+    <meta name="baidu-site-verification" content="f2dwZkRE36" />
+    <meta name="description" content="该博客用于记录网易云课堂中相关课程讲述的思路和一些扩展." />
+    <meta name="keywords" content="blog, 博客, 黑板客, 爬虫闯关, 机器学习, django后端开发, 用python做些事." />
+    <meta name="author" content="heibanke" />
+    <head>
+        <title>第4关password列表</title>
+
+        <link rel="stylesheet" href="/static/libs/bootstrap/css/bootstrap.min.css">
+        <link href="/static/libs/jquery-ui-1.11.2/jquery-ui.min.css" rel="stylesheet" type="text/css"/>
+ 
+        <!--[if lt IE 9]><script src="/static/libs/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+
+        <!--[if lt IE 9]>
+          <script src="/static/libs/js/html5shiv.js"></script>
+          <script src="/static/libs/js/respond.min.js"></script>
+        <![endif]-->
+        <script src="/static/libs/jquery-ui-1.11.2/external/jquery/jquery.js"></script>
+        <script src="/static/libs/bootstrap/js/bootstrap.min.js"></script>
+        <script src="/static/libs/js/d3.min.js"></script>
+        <script src="/static/libs/jquery-ui-1.11.2/jquery-ui.min.js"></script>
+        
+        <script>
+            var _hmt = _hmt || [];
+            (function() {
+              var hm = document.createElement("script");
+              hm.src = "//hm.baidu.com/hm.js?74e694103cf02b31b28db0a346da0b6b";
+              var s = document.getElementsByTagName("script")[0]; 
+              s.parentNode.insertBefore(hm, s);
+            })();
+        </script>
+    
+        
+
+
+    </head>
+    <body>
+        <div class="container-fluid">
+         
+        <div class="row">
+            <div class="col-sm-1 col-md-2 col-lg-3"></div>
+            <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6">
+                
+
+
+<h5>欢迎 lslsls 访问我们站点!   <a href="/accounts/logout">注销</a></h5>
+
+
+
+    <h2>这个网页的载入会慢半拍, 所以请耐心等待</h2>
+    <table class="table table-striped">
+        <tr class="info">
+            <td><strong>密码的位置(随机)</strong></td>
+            <td><strong>密码的值</strong></td>
+        </tr>
+
+        
+            
+            <tr class="">
+                <td data-toggle="tooltip" data-placement="left" title="password_pos">100</td>
+                <td data-toggle="tooltip" data-placement="left" title="password_val">4</td>
+            </tr>
+            
+            <tr class="active">
+                <td data-toggle="tooltip" data-placement="left" title="password_pos">25</td>
+                <td data-toggle="tooltip" data-placement="left" title="password_val">8</td>
+            </tr>
+            
+            <tr class="">
+                <td data-toggle="tooltip" data-placement="left" title="password_pos">20</td>
+                <td data-toggle="tooltip" data-placement="left" title="password_val">2</td>
+            </tr>
+            
+            <tr class="active">
+                <td data-toggle="tooltip" data-placement="left" title="password_pos">9</td>
+                <td data-toggle="tooltip" data-placement="left" title="password_val">2</td>
+            </tr>
+            
+            <tr class="">
+                <td data-toggle="tooltip" data-placement="left" title="password_pos">59</td>
+                <td data-toggle="tooltip" data-placement="left" title="password_val">4</td>
+            </tr>
+            
+            <tr class="active">
+                <td data-toggle="tooltip" data-placement="left" title="password_pos">16</td>
+                <td data-toggle="tooltip" data-placement="left" title="password_val">6</td>
+            </tr>
+            
+            <tr class="">
+                <td data-toggle="tooltip" data-placement="left" title="password_pos">50</td>
+                <td data-toggle="tooltip" data-placement="left" title="password_val">4</td>
+            </tr>
+            
+            <tr class="active">
+                <td data-toggle="tooltip" data-placement="left" title="password_pos">24</td>
+                <td data-toggle="tooltip" data-placement="left" title="password_val">1</td>
+            </tr>
+            
+        
+
+
+    </table>
+      
+    <ul class="pagination">
+        
+           <li class="disable"><a>&laquo;</a></li>
+        
+        
+         
+            
+            <li class="active"><a href="?page=1">1</a></li>
+            
+         
+            
+            <li ><a href="?page=2">2</a></li>
+            
+         
+            
+            <li ><a href="?page=3">3</a></li>
+            
+         
+            
+            <li ><a href="?page=4">4</a></li>
+            
+         
+            
+            <li ><a href="?page=5">5</a></li>
+            
+         
+            
+            <li><a><strong>...</strong></a></li>
+            
+         
+            
+         
+            
+         
+            
+         
+            
+         
+            
+         
+            
+         
+            
+            <li ><a href="?page=13">13</a></li>
+            
+        
+        
+           <li><a href="?page=2">&raquo;</a></li>
+        
+     </ul>
+  
+
+
+
+                <div class="text-center">
+<table class="table">
+<thead>
+<tr>
+<td><a href="http://www.miitbeian.gov.cn" target="_blank" ><small>京ICP备14042321号</small></a></td>
+<td><a href="http://www.heibanke.com/jizhang" target="_blank" ><small>云记账demo</small></a></td>
+<td><a href="http://www.heibanke.com" target="_blank" ><small>黑板客blog</small></a></td>
+<td><a href="http://study.163.com/course/courseMain.htm?courseId=1000035" target="_blank" ><small>用Python做些事</small></a></td>
+
+</tr>
+</thead>
+</table>
+</div>    
+            </div>
+            <div class="col-sm-1 col-md-2 col-lg-3"></div>
+        </div>  
+        </div>
+    </body>
+</html>

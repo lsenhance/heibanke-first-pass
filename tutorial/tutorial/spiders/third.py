@@ -45,8 +45,8 @@ class third_mission(scrapy.Spider):
         flag=response.xpath('/html/body/div/div/div[2]/h3/text()').extract()[0]
         print(flag)
         if re.search(r'密码错误',flag) is not None:
-            self.t=self.t+1
             print("密码不为%d"%self.t)
+            self.t=self.t+1
             yield scrapy.Request('http://www.heibanke.com/lesson/crawler_ex02/',callback=self.after_login,dont_filter=True,
             meta={'cookiejar':response.meta['cookiejar']},)
         else:

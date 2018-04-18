@@ -27,9 +27,6 @@ class second_mission(scrapy.Spider):
         )
     
     def test(self,response):
-        #if "密码错误" in response.body:
-            #print('密码错误')
-
         login_sta=response.xpath('/html/body/div/div/div[2]/h3').extract()[0]
         if re.search(r"密码错误",login_sta) is not None:
             login_sta=False

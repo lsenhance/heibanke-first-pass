@@ -14,4 +14,3 @@ class TutorialItem(scrapy.Item):
     author=scrapy.Field()
     tag=scrapy.Field()
     quote=scrapy.Field()
-    pass
