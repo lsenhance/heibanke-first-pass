@@ -60,7 +60,7 @@ class mission_three(scrapy.Spider):
         val_list=re.findall(val_pattern,response.text)
         #打包字典，填充数值
         for pos,val in zip(pos_list,val_list):
-            if pos not in self.password_dict:
+            if pos not in self.password_dict.keys():
                 self.password_dict[pos]=val
                 self.count=self.count+1 #位数加1
                 print(self.count)
@@ -87,7 +87,7 @@ class mission_three(scrapy.Spider):
         for pos in self.password_dict.keys():
             self.password_list[int(pos)]=self.password_dict[pos]
         password=int(''.join(self.password_list))
-        print(password)
+        print('密码为：%s'%password)
         '''threads=[None]*5
         for i in range(0,5):
             threads[i]=threading.Thread(target=self.work)
@@ -112,4 +112,6 @@ class mission_three(scrapy.Spider):
                     callback=self.find_password
                 )
         else:
-            pass
+            with open('x.xml','wb') as fb:
+                fb.write(response.body)
+

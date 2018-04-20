@@ -68,6 +68,9 @@ COOKIES_DEBUG=True
 #ITEM_PIPELINES = {
 #    'tutorial.pipelines.TutorialPipeline': 300,
 #}
+#ITEM_PIPELINES={'scrapy.pipelines.images.ImagePipeline':1}
+
+#IMAGE_STORE=r'F:\file\VS code\heibanke-scrapy-mission\tutorial'
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html

@@ -50,38 +50,11 @@
 
 <h1>这里是黑板客爬虫闯关的第五关</h1>
 
-<h3>加了验证码</h3>
+<h3>恭喜! 用户6成功闯关, 后续关卡敬请期待</h3>
 
 
 <form method="post" action="">
     <input type='hidden' name='csrfmiddlewaretoken' value='O1ZrzNA4dmc1HoNkidEasgKPNRHggtGM' />
-    
-
-        
-            <div class="form-group">
-            <label for="id_username">昵称(可选):</label> 
-            <input class="form-control" id="id_username" maxlength="40" name="username" size="40" type="text" />
-            </div>
-        
-
-    
-
-        
-            <div class="form-group">
-            <label for="id_password">密码(必填):</label> 
-            <input class="form-control" id="id_password" maxlength="20" name="password" size="20" type="password" />
-            </div>
-        
-
-    
-
-        
-            <div class="form-group">
-            <label for="id_captcha_1">验证码(必填):</label> 
-            <img src="/captcha/image/7381a623cdba050d0affd043318d08a045ec1e29/" alt="captcha" class="captcha" /> <input id="id_captcha_0" name="captcha_0" type="hidden" value="7381a623cdba050d0affd043318d08a045ec1e29" /> <input autocomplete="off" id="id_captcha_1" name="captcha_1" type="text" />
-            </div>
-        
-
     
     <div class="form-group">
         <input class="btn btn-primary" id="id_submit" type="submit" value="提交">
